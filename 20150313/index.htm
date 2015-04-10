@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>請輸入帳號密碼</title>
+<meta charset="utf-8"><!--解決網頁顯示亂碼的問題-->
+</head>
+
+
+<body >
+	<form method="POST" action="echo.php">
+
+	請輸入姓名：
+	<input type="text" name="username" maxlength="6"></br><!--type=text為輸入框 name為PHP接收的名稱 maxlength為字數限制-->
+	請輸入密碼：
+	<input type="password" name="passwd" ></br>
+	性別：
+	<input type="radio" name="sex" value="girl">女生<!--type=radio為單選 value為PHP接收後顯示的字-->
+	<input type="radio" name="sex" value="boy">男生</br>
+	血型：
+	<input type="radio" name="blood" value="A型">A
+	<input type="radio" name="blood" value="B型">B
+	<input type="radio" name="blood" value="O型">O
+	<input type="radio" name="blood" value="AB型">AB</br>
+	系統:
+	<input type="checkbox" name="vista"value="vista系統">Vista<!--type=checkbox為多選 value為PHP接收後顯示的字-->
+	<input type="checkbox" name="xp"value="xp系統">XP
+	<input type="checkbox" name="win2000"value="win2000系統">Win2000
+	<input type="checkbox" name="fedora"value="fedora系統">Fedora
+	<input type="checkbox" name="opensuse"value="opensuse系統">Opensuse
+	<input type="checkbox" name="ubntu"value="ubntu系統">Ubntu</br>
+	<input type="submit" value="送出"><!--送出的按鈕-->
+	<input type="reset" value="重新輸入"><!--清除的按鈕-->
+	</form>
+
+</body>
+
+
+</html>
